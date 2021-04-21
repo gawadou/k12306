@@ -1,6 +1,6 @@
 #服务端口
 server:
-  port: 15000
+  port: 15001
 
 #eureka注册中心配置
 eureka:
