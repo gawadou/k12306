@@ -1,0 +1,24 @@
+#服务端口
+server:
+  port: 15000
+
+#eureka注册中心配置
+eureka:
+  #实例配置
+  instance:
+    #实例名
+    hostname: localhost
+  #客户端配置
+  client:
+    #当前主机是否注册到注册中心
+    register-with-eureka: false
+    #当前主机是否需要获取其他服务的注册信息
+    fetch-registry: false
+  #服务地址
+  service-url:
+    defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+
+
+#spring:
+#  freemarker:
+#    prefer-file-system-access: false
